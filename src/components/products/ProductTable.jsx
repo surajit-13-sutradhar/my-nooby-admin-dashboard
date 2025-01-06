@@ -2,7 +2,7 @@
 
 
 import { motion } from "framer-motion"
-import { Edit, Edit2, Search, Trash2 } from "lucide-react"
+import {Edit2, Search, Trash2 } from "lucide-react"
 import { useState } from "react"
 
 const PRODUCT_DATA = [
@@ -26,10 +26,6 @@ const ProductTable = () => {
         setFilteredProducts(filtered)
     }
 
-    // Deleting Products
-    const handleDelete = (id) => {
-        setFilteredProducts(PRODUCT_DATA.filter(product => product.id !== id))
-    }
 
     return (
         <motion.div

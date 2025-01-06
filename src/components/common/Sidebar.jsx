@@ -1,4 +1,4 @@
-import { BarChart2, DollarSign, Settings, ShoppingBag, ShoppingCart, TrendingUpDown, Users, Menu } from 'lucide-react'
+import { BarChart2, DollarSign, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users, Menu } from 'lucide-react'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
@@ -6,14 +6,15 @@ import { Link } from 'react-router-dom'
 
 // Covention, as it is hardcoded
 const SIDEBAR_ITEMS = [
-    { name: "Overview", icon: BarChart2, color: "#6366f1", href: "/" },
-    { name: "Products", icon: ShoppingBag, color: "#8B5CF6", href:"/products" },
-    { name: "Users", icon: Users, color: "#8B5CF6", href:"/users" },
-    { name: "Sales", icon: DollarSign, color: "#8B5CF6", href:"/sales" },
-    { name: "Orders", icon: ShoppingCart, color: "#8B5CF6", href:"/orders" },
-    { name: "Analytics", icon: TrendingUpDown, color: "#8B5CF6", href:"/analytics" },
-    { name: "Settings", icon: Settings, color: "#8B5CF6", href:"/settings" },
-]
+	{ name: "Overview", icon: BarChart2, color: "#6366f1", href: "/"
+	},
+	{ name: "Products", icon: ShoppingBag, color: "#8B5CF6", href: "/products" },
+	{ name: "Users", icon: Users, color: "#EC4899", href: "/users" },
+	{ name: "Sales", icon: DollarSign, color: "#10B981", href: "/sales" },
+	{ name: "Orders", icon: ShoppingCart, color: "#F59E0B", href: "/orders" },
+	{ name: "Analytics", icon: TrendingUp, color: "#3B82F6", href: "/analytics" },
+	{ name: "Settings", icon: Settings, color: "#6EE7B7", href: "/settings" },
+];
 
 const Sidebar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true) 
